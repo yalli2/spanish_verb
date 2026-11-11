@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verbos 360 · 스페인어 동사 활용 인터랙티브 학습</title>
+<meta name="description" content="스페인어 동사 활용(현재·과거·미래·명령·접속법)을 24개 챕터, 105개 섹션의 동사표와 연습문제로 익히는 인터랙티브 학습 사이트">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,700&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">V</span><span>Verbos 360<small>스페인어 동사 활용 마스터</small></span></a>
+    <span class="spacer"></span>
+    <button class="tb-btn" data-voice-toggle>🔊 <span class="lbl">음성 설정</span></button>
+    <a class="tb-btn primary" id="continue" href="chapter.html?ch=1">▶ <span class="lbl">이어서 학습</span></a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="hero-deco">hablar</div>
+    <h1>동사를 <em>입으로</em> 말하고,<br>손으로 활용하자.</h1>
+    <p class="lead">현재형부터 접속법 과거, 명령형과 목적격 대명사까지 — 챕터별 동사표를 직접 채우고, 연습문제를 풀면 즉시 채점됩니다. 모든 문장은 스페인어 원어민 음성으로 들을 수 있어요.</p>
+    <div class="hero-stats" id="stats"></div>
+  </section>
+
+  <div class="howto">
+    <div><i>1</i><b>규칙 확인</b>각 섹션의 활용 규칙 표를 읽고 🔊로 발음을 들어요.</div>
+    <div><i>2</i><b>동사표 채우기</b>표의 빈칸에 활용형을 쓰고 [채점]을 눌러요.</div>
+    <div><i>3</i><b>연습문제</b>빈칸·선택·고쳐쓰기·문장 배열·크로스워드!</div>
+    <div><i>4</i><b>점수 확인</b>최고 점수가 자동 저장되어 진도가 표시돼요.</div>
+  </div>
+
+  <div class="toolbar">
+    <label class="search">🔎 <input id="q" placeholder="섹션 검색 (예: 명령형, preterite, -zco, 재귀)"></label>
+    <div class="filter-chips" id="chips"></div>
+  </div>
+
+  <div id="chapters"></div>
+</main>
+<footer class="site">
+  학습용 비영리 사이트 · 문장과 설명은 학습 목적에 맞게 새로 구성했습니다 · 진도는 이 기기의 브라우저에만 저장됩니다
+  <br><button class="btn sm" id="reset" style="margin-top:10px">진도 초기화</button>
+</footer>
+
+<script src="data/book.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

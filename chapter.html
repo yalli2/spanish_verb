@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verbos 360 · 챕터</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,700&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">V</span><span>Verbos 360<small>스페인어 동사 활용 마스터</small></span></a>
+    <span class="spacer"></span>
+    <a class="tb-btn" href="index.html">🏠 <span class="lbl">메인</span></a>
+    <button class="tb-btn" data-voice-toggle>🔊 <span class="lbl">음성 설정</span></button>
+    <button class="tb-btn primary" id="drill-open">⚡ <span class="lbl">스피드 드릴</span></button>
+  </div>
+</header>
+<div class="wrap layout">
+  <nav class="sidenav" id="sidenav"></nav>
+  <main id="main"></main>
+</div>
+
+<div class="modal-bg" id="drill">
+  <div class="modal">
+    <button class="x" id="drill-x" aria-label="닫기">×</button>
+    <h3 style="margin:0">⚡ 스피드 드릴</h3>
+    <div class="empty-note">이 섹션의 동사표에서 무작위로 출제됩니다. Enter로 제출!</div>
+    <div class="drill-q"><div class="pr" id="d-pr"></div><div class="vb" id="d-vb"></div><span class="tn" id="d-tn"></span></div>
+    <input class="drill-in" id="d-in" autocomplete="off" autocapitalize="off" spellcheck="false">
+    <div class="drill-fb" id="d-fb"></div>
+    <div class="drill-stats"><div>정답 <b id="d-ok">0</b></div><div>시도 <b id="d-n">0</b></div><div>연속 <b id="d-st">0</b></div></div>
+  </div>
+</div>
+
+<script src="data/book.js"></script>
+<script src="js/common.js"></script>
+<script>
+  (function () {
+    const p = new URLSearchParams(location.search);
+    const ch = Math.max(1, Math.min(24, parseInt(p.get('ch') || '1', 10) || 1));
+    const s = document.createElement('script');
+    s.src = 'data/ch' + String(ch).padStart(2, '0') + '.js';
+    s.onload = () => { const j = document.createElement('script'); j.src = 'js/chapter.js'; document.body.appendChild(j); };
+    s.onerror = () => { document.getElementById('main').innerHTML = '<p>챕터 데이터를 불러오지 못했어요.</p>'; };
+    document.body.appendChild(s);
+  })();
+</script>
+</body>
+</html>
