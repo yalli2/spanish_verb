@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "net.dainedu.verbos360",
+        "sha256_cert_fingerprints": ["C1:AB:06:26:C0:C7:15:4F:C5:1A:C1:60:E0:95:0E:CE:B6:F3:45:50:B2:7A:3C:20:E7:1D:38:F1:05:91:66:4F"]
+      }
+    }]
