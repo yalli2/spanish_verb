@@ -250,14 +250,14 @@
   .cb-hr{border:0;border-top:1px dashed #e7e1d5;margin:8px 0}
   .cb-typing{color:var(--ink-3,#7c8597);font-size:13px}
   .cb-foot{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line,#e7e1d5);background:#fff}
-  .cb-foot input{flex:1;border:1px solid var(--line,#e7e1d5);border-radius:12px;padding:10px 12px;font-size:15px;outline:none}
+  .cb-foot input{flex:1;min-width:0;border:1px solid var(--line,#e7e1d5);border-radius:12px;padding:10px 12px;font-size:15px;outline:none}
   .cb-foot input:focus{border-color:var(--blue,#2457a6)}
-  .cb-foot button{border:0;background:var(--rojo,#b8202c);color:#fff;border-radius:12px;padding:0 16px;font-size:15px;font-weight:700;cursor:pointer}
+  .cb-foot button{white-space:nowrap;border:0;background:var(--rojo,#b8202c);color:#fff;border-radius:12px;padding:0 16px;font-size:15px;font-weight:700;cursor:pointer}
   .cb-mode{display:flex;gap:6px;padding:6px 14px;background:#fff;border-bottom:1px solid var(--line,#e7e1d5);font-size:12px;align-items:center}
   .cb-mode button{border:1px solid var(--line,#e7e1d5);background:#fff;border-radius:999px;padding:3px 10px;font-size:12px;cursor:pointer}
   .cb-mode button.on{background:var(--ink,#1d2433);color:#fff;border-color:var(--ink,#1d2433)}
   @media (max-width:560px){.cb-panel{right:8px;bottom:84px;height:calc(100vh - 100px)}.cb-fab{right:12px;bottom:12px}}
-  body.cb-open .acc-kb{bottom:auto;top:70px}`;
+  body.cb-open .acc-kb{bottom:auto;top:70px;z-index:80}`;
   document.head.appendChild(css);
 
   const fab = document.createElement('button');

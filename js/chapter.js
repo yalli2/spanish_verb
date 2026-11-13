@@ -487,6 +487,7 @@
 
   function renderSection() {
     nav.querySelectorAll('a.s').forEach(a => a.classList.toggle('on', a.dataset.s === cur.id));
+    const onA = nav.querySelector('a.s.on'); if (onA && innerWidth <= 900) nav.scrollLeft = onA.offsetLeft - 120;
     try { localStorage.setItem('sv_last', JSON.stringify({ ch: C.ch, s: cur.id })); } catch (e) {}
     const idx = C.sections.indexOf(cur);
     const prev = C.sections[idx - 1], next = C.sections[idx + 1];

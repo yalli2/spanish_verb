@@ -1,4 +1,5 @@
 (function () {
+  try { const L = JSON.parse(localStorage.getItem('sv_last') || 'null'); if (L && /resume=1/.test(location.search)) { location.replace(`chapter.html?ch=${L.ch}&s=${L.s}`); return; } } catch (e) {}
   const B = window.BOOK;
   const P = SV.load();
   const GROUPS = [

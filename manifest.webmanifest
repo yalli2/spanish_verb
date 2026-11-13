@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "Verbos 360 · 스페인어 동사 활용",
+  "short_name": "Verbos 360",
+  "description": "스페인어 동사 활용(현재·과거·미래·명령·접속법)을 24개 챕터의 동사표와 연습문제, 원어민 발음, 학습 도우미 챗봇으로 익히는 학습 앱",
+  "lang": "ko",
+  "dir": "ltr",
+  "start_url": "./index.html?source=app",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fbf8f2",
+  "theme_color": "#b8202c",
+  "categories": ["education"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    { "src": "screenshots/phone-1.png", "sizes": "1080x1920", "type": "image/png", "form_factor": "narrow", "label": "챕터 목록" },
+    { "src": "screenshots/phone-2.png", "sizes": "1080x1920", "type": "image/png", "form_factor": "narrow", "label": "동사표 채우기" },
+    { "src": "screenshots/phone-3.png", "sizes": "1080x1920", "type": "image/png", "form_factor": "narrow", "label": "학습 도우미 챗봇" },
+    { "src": "screenshots/wide-1.png", "sizes": "1920x1080", "type": "image/png", "form_factor": "wide", "label": "섹션 학습 화면" }
+  ],
+  "shortcuts": [
+    { "name": "이어서 학습", "url": "./index.html?resume=1", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "점과거", "url": "./chapter.html?ch=11", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "접속법", "url": "./chapter.html?ch=19", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

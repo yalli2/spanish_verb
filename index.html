@@ -9,6 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,700&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#b8202c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Verbos 360">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -45,13 +53,14 @@
 </main>
 <footer class="site">
   학습용 비영리 사이트 · 문장과 설명은 학습 목적에 맞게 새로 구성했습니다 · 진도는 이 기기의 브라우저에만 저장됩니다
-  <br><button class="btn sm" id="reset" style="margin-top:10px">진도 초기화</button>
+  <br><a href="privacy.html">개인정보처리방침</a> · <button class="btn sm" id="reset" style="margin-top:10px">진도 초기화</button>
 </footer>
 
 <script src="data/book.js"></script>
 <script src="js/common.js"></script>
 <script src="js/config.js"></script>
 <script src="js/chatbot.js" defer></script>
+<script src="js/pwa.js" defer></script>
 <script src="js/index.js"></script>
 </body>
 </html>
